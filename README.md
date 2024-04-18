@@ -14,7 +14,7 @@ I'll be adding all the links.
 
 
 - [Exam Info Link](https://developer.hashicorp.com/terraform/tutorials/certification-003](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification)
-- [Study Guide for AZ-104](https://developer.hashicorp.com/terraform/tutorials/certification-associate-tutorials-003](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
+[Study Guide for AZ-104](https://developer.hashicorp.com/terraform/tutorials/certification-associate-tutorials-003](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 
 
 # PR?
