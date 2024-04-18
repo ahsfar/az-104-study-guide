@@ -14,7 +14,7 @@ I'll be adding all the links.
 
 
 - [Exam Info Link](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification)
-- [Study Guide for AZ-104](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
+- [Official Study Guide for AZ-104](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 
 
 # PR?
