@@ -3,7 +3,7 @@ The objective of this repository is help you for taking the AZ-104 Azure Adminis
 
 I'll be adding all the links.
 
-[# Important Details And Tips For AZ-104:](https://k21academy.com/microsoft-azure/admin/microsoft-azure-administrator-certification/#:~:text=Important%20Details%20And%20Tips%20For,to%20%27n%27%20correct%20answers.)
+# [Important Details And Tips For AZ-104:](https://k21academy.com/microsoft-azure/admin/microsoft-azure-administrator-certification/#:~:text=Important%20Details%20And%20Tips%20For,to%20%27n%27%20correct%20answers.)
 
 - Multiple-choice questions are either Single-correct answers or up to ’n’ correct answers.
 - 210 minutes, passing score 700/1000, no negative marks.
