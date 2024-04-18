@@ -1,4 +1,4 @@
-# AZ-104
+# AZ-104 - Azure Administrator
 The objective of this repository is help you for taking the AZ-104 Azure Administrator using official documentation and some other online resources (optional).
 
 I'll be adding all the links.
