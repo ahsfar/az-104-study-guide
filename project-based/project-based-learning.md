@@ -3,7 +3,7 @@
 Project: Create Azure Infrastructure
 Company: Immerse Ins.
 
-## 1	Create account, resource group and Provision Azure subscription.
+## 1.	Create account, resource group and Provision Azure subscription.
 - [Create an Azure account - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/azure/create-azure-account)
 - [How To Create Azure Free Account | Azure Account Creation](https://www.youtube.com/watch?v=rj1NOtkJ62A)
 - [Manage resource groups - Azure portal - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
