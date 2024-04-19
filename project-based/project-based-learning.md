@@ -1,7 +1,6 @@
 # [Project based approach based on this udemy course](https://www.udemy.com/course/az-104-microsoft-azure-administrator-lab-exam-prep/) 
 
-Project: Create Azure Infrastructure
-Company: Immerse Ins.
+# Project: Create Azure Infrastructure Company: Immerse Ins.
 
 ## 1.	Create account, resource group and Provision Azure subscription.
 - [Create an Azure account - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/azure/create-azure-account)
