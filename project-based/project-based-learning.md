@@ -9,3 +9,8 @@
 - [Create a Microsoft Customer Agreement subscription - Azure Cost Management + Billing | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
 
 
+## 2. 2)	Create AAD Tenant for the Immerse Ins. -> immerse.onmicrosoft.com
+
+Assign owner role for the AAD Tenant
+
+- [Quickstart - Access and create new tenant - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/entra/fundamentals/create-new-tenant)
