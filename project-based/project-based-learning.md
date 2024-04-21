@@ -9,8 +9,31 @@
 - [Create a Microsoft Customer Agreement subscription - Azure Cost Management + Billing | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)
 
 
-## 2. 2)	Create AAD Tenant for the Immerse Ins. -> immerse.onmicrosoft.com
+## 2.	Create AAD Tenant for the Immerse Ins. -> immerse.onmicrosoft.com
 
 Assign owner role for the AAD Tenant
 
 - [Quickstart - Access and create new tenant - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/entra/fundamentals/create-new-tenant)
+
+## 3.	Purchase a Custom Domain or used existing immerse.com.
+
+## 4.	Map immerse.com -> immerse.onmicrosoft.com
+
+- Hands On:
+AAD -> Custom Domain names:
++ add custom domain: immerse.com (click add domain)
+Record type: TXT / MX (Research more about it)
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/175db05a-db9a-4fe0-b0ea-47d6ec9b8795)
+
+
+Go godaddy -> domain > manage dns -> dns records :
+Type: mx 
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/c613dcb6-4336-4bed-b82e-b9c7f20dceb5)
+
+
+Name: 
+Priority:
+Value:
+TTL:
+Submit above values as they appear on Azure ADD -> Custom Domain -> Immerse.com
+After added and verified. Can make it primary.
