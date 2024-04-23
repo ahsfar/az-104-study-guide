@@ -41,6 +41,7 @@ After added and verified. Can make it primary.
 ## 5.	Invite existing users (by email address) – practical approach.
 For email most popular approach is office 365 (firstname.lastname@immerse.com)
 (GoDaddy also offers email accounts for domain)
+
 • Add Users to AAD in portal.
 
 •	Users (company employees) & Guest Users (could be contractors)
