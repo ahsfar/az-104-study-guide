@@ -53,3 +53,18 @@ How to create or delete users in Microsoft Entra ID - Microsoft Entra | Microsof
 Immerse ADD -> Users -> Bulk Operation -> Create Bulk users:
 Download excel file, fill excel in the given format and upload the file. 
 
+## 6. RBAC
+
+[What is Azure role-based access control (Azure RBAC)?](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/89e7c4be-8744-40ff-bfa0-1f16433c5f8f)
+
+Mange user access
+Should be able to create any resource for organization
+Should be able to create/manage Storage
+Should be able to create/manage networks
+Should be able to create/manage VM
+•	Azure built in Roles (e.g. Contributor, Owner, Reader, User Access Admin, etc)
+•	Custom Role
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/225666ff-9442-4519-ae26-1df4a1108c7b)
