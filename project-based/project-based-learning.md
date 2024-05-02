@@ -15,7 +15,7 @@ Assign owner role for the AAD Tenant
 
 - [Quickstart - Access and create new tenant - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/entra/fundamentals/create-new-tenant)
 
-## 3.	Purchase a Custom Domain or used existing immerse.com.
+## 3.	Purchase a Custom Domain or use existing e.g. immerse.com.
 
 ## 4.	Map immerse.com -> immerse.onmicrosoft.com
 
