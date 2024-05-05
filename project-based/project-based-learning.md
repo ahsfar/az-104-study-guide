@@ -70,10 +70,10 @@ Should be able to create/manage VM
 ![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/225666ff-9442-4519-ae26-1df4a1108c7b)
 
 
-## 7. 7)	Resource Group
+## 7.	Resource Group
 
 It’s like a folder/container of a project. 
 Resource group can contain resources of any region despite of the resource group location.
 Create Resource group for immerse projects according to location.
-![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/5718f2ad-a105-40d1-8beb-739367d79d14)
+
 
