@@ -79,3 +79,4 @@ Should be able to create/manage VM
 - Create Resource group for immerse projects according to location.
 
 
+## 8.	
