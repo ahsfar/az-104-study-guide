@@ -72,6 +72,8 @@ Should be able to create/manage VM
 
 ## 7.	Resource Group
 
+[What is Azure resource manager and resource group?](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups)
+
 - It’s like a folder/container of a project.
 - Resource group can contain resources of any region despite of the resource group location.
 - Create Resource group for immerse projects according to location.
