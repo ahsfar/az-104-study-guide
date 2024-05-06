@@ -94,8 +94,8 @@ Common usages: resource governance, regulatory compliance, security & cost mgmt.
 Azure policies can be used to ask user to always tag resources.
 
 - Hands On:
-Policy -> Definitions (Under Authoring)
-+ Policy definition (+ Initiative definition is group of policies)
+
+Policy -> Definitions (Under Authoring) + Policy definition (+ Initiative definition is group of policies)
 Created on Date tag policy
 Assign to your scope -> subscription or resource group
 Created policy for tags mandatory
