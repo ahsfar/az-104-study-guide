@@ -79,4 +79,32 @@ Should be able to create/manage VM
 - Create Resource group for immerse projects according to location.
 
 
-## 8.	
+## 8.	Tags & Tag Policy Creation for Immerse
+
+Resource creation/organization Policy for Organization
+Organize by environment (DEV, INT, UAT, PROD, LAB), by expected duration (ST= Short term, LT = Long Term)
+
+•	Tags
+Classify Azure Resource -> Key Value Pair e.g. ENV= PROD (specified during resource creation)
+One resource can have multiple tags and tags are optional.
+
+•	Azure Policies 
+Standard and enforce compliant. 
+Common usages: resource governance, regulatory compliance, security & cost mgmt.
+Azure policies can be used to ask user to always tag resources.
+
+- Hands On:
+Policy -> Definitions (Under Authoring)
++ Policy definition (+ Initiative definition is group of policies)
+Created on Date tag policy
+Assign to your scope -> subscription or resource group
+Created policy for tags mandatory
+Created policy for fields: tags[Duration] -> notIn: [“LT”,”ST”] & tags[ENV] -> notIn: [“DEV”, “INT” , “UAT”, “PROD”, “LAB”]
+Policy e.g.
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/6318d0de-d6a4-4ed3-b4a8-79e14b8ce276)
+
+[Azure Policy pattern: tags](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-tags)
+
+
+## 9.
+
