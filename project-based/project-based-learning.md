@@ -101,6 +101,7 @@ Assign to your scope -> subscription or resource group
 Created policy for tags mandatory
 Created policy for fields: tags[Duration] -> notIn: [“LT”,”ST”] & tags[ENV] -> notIn: [“DEV”, “INT” , “UAT”, “PROD”, “LAB”]
 Policy e.g.
+
 ![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/6318d0de-d6a4-4ed3-b4a8-79e14b8ce276)
 
 [Azure Policy pattern: tags](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-tags)
