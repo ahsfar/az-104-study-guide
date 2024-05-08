@@ -107,5 +107,43 @@ Policy e.g.
 [Azure Policy pattern: tags](https://learn.microsoft.com/en-us/azure/governance/policy/samples/pattern-tags)
 
 
-## 9.
+## 9. Storage account provisioning
 
+•	Requirement #1
+Store backup data rarely accessed for compliance purpose.
+Project Name: Nebula
+Storage Account: Nebulastorage3672
+Access Tier: Cool
+Delete Protection (Soft Delete): 15 Days
+Should Support: Table, Queue, File Share, Data Lake, Blob
+Geographically Redundant
+Should be accessible form public internet.
+Tags: ENV=PROD, DURATION=LT
+Types of Storage Accounts:
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/14e9abdf-0ffd-4a70-bcc5-a0022d7ccd0b)
+
+Access Tier Options:
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/ba14c6bb-5f75-46a4-bb1b-ad7d9786a2dc)
+
+Azure Storage: Overview and Introduction to the Various Solutions
+
+[Azure Storage: Overview and Introduction to the Various Solutions (cloudacademy.com)](https://cloudacademy.com/blog/azure-storage-service-overview/)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/c398336a-b824-43d9-940c-de75ab3272e9)
+
+High-level architecture and data flow of the proposed solution to support incremental back-up. 
+
+[Azure Block Blob Storage Backup | Blog Azure | Microsoft Azure](https://azure.microsoft.com/fr-fr/blog/microsoft-azure-block-blob-storage-backup/)
+
+![Uploading image.png…]()
+
+•	Requirement 2:
+- Hands On:
+
+Container/folder under nebula storage account.
+Got to nebula storage account -> click container (under data storage):
++ container -> create container named log -> upload a file and create folder named data.
+
+## 10.
