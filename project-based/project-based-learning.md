@@ -137,7 +137,8 @@ High-level architecture and data flow of the proposed solution to support increm
 
 [Azure Block Blob Storage Backup | Blog Azure | Microsoft Azure](https://azure.microsoft.com/fr-fr/blog/microsoft-azure-block-blob-storage-backup/)
 
-![Uploading image.png…]()
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/ff6f034f-176a-45ed-b8f8-57f653e78a86)
+
 
 •	Requirement 2:
 - Hands On:
