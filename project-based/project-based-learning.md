@@ -149,6 +149,8 @@ Got to nebula storage account -> click container (under data storage):
 
 ## 10. Storage Account – Data Sharing with External Organization
 
+[Storage account overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+
 •	Requirement:
 1st – 30th April
 IP: 201.34.43.12
