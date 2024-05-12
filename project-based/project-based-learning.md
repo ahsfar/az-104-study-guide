@@ -147,4 +147,13 @@ Container/folder under nebula storage account.
 Got to nebula storage account -> click container (under data storage):
 + container -> create container named log -> upload a file and create folder named data.
 
-## 10.
+## 10. Storage Account – Data Sharing with External Organization
+
+•	Requirement:
+1st – 30th April
+IP: 201.34.43.12
+2 ways: RBAC (internal or guest user) & Shared Access Signature (if not part of org)
+- Hands On:
+Nebula storage account: click shared access signature (under security + networking)
+Fill up the info and get the connection string to share.
+
