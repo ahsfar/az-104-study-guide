@@ -159,3 +159,11 @@ IP: 201.34.43.12
 Nebula storage account: click shared access signature (under security + networking)
 Fill up the info and get the connection string to share.
 
+## 11.	File Sharing permission using RBAC
+
+•	Requirement:
+User1: Access to read file shares over SMB
+User2: Access to read, write, delete and modify NTFS permissions in Azure Storage File Shares over SMB
+
+- Hands On:
+2nd way using rbac-> go to nebula storage account: -> IAM -> add role assignment -> Storage file data smb share reader ->next  (+ select member ) -> review and assign.
