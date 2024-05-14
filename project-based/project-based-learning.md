@@ -167,3 +167,5 @@ User2: Access to read, write, delete and modify NTFS permissions in Azure Storag
 
 - Hands On:
 2nd way using rbac-> go to nebula storage account: -> IAM -> add role assignment -> Storage file data smb share reader ->next  (+ select member ) -> review and assign.
+
+## 12.
