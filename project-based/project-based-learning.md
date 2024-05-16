@@ -144,7 +144,7 @@ High-level architecture and data flow of the proposed solution to support increm
 - Hands On:
 
 Container/folder under nebula storage account.
-Got to nebula storage account -> click container (under data storage):
+Go to nebula storage account -> click container (under data storage):
 + container -> create container named log -> upload a file and create folder named data.
 
 ## 10. Storage Account – Data Sharing with External Organization
