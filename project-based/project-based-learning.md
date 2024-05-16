@@ -168,4 +168,12 @@ User2: Access to read, write, delete and modify NTFS permissions in Azure Storag
 - Hands On:
 2nd way using rbac-> go to nebula storage account: -> IAM -> add role assignment -> Storage file data smb share reader ->next  (+ select member ) -> review and assign.
 
-## 12.
+## 12.	Implement Storage Account Life Cycle mgmt
+
+•	Requirement: Optimize storage cost
+Auto change access tier of files in data folder in nebula storage account to Archive if not modified last 75 days.
+
+- Hands On:
+Nebula storage account: -> lifecycle mgmt (under data mgmt)-> + add a rule:
+Enter info, add conditions, choose folder. And hit add the policy.
+
