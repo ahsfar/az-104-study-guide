@@ -177,3 +177,10 @@ Auto change access tier of files in data folder in nebula storage account to Arc
 Nebula storage account: -> lifecycle mgmt (under data mgmt)-> + add a rule:
 Enter info, add conditions, choose folder. And hit add the policy.
 
+## 13.	Azure Storage Redundancy
+
+[Data redundancy - Azure Storage | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
+Locally Redundant Storage = LZR
+Zone Redundant Storage = ZRS
+Geo Redundant Storage = GRS
+Geo Zone Redundant Storage =GZRS
