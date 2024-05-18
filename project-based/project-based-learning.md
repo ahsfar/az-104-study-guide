@@ -180,7 +180,37 @@ Enter info, add conditions, choose folder. And hit add the policy.
 ## 13.	Azure Storage Redundancy
 
 [Data redundancy - Azure Storage | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
-Locally Redundant Storage = LZR
-Zone Redundant Storage = ZRS
-Geo Redundant Storage = GRS
-Geo Zone Redundant Storage =GZRS
+
+- Locally Redundant Storage = LZR
+- Zone Redundant Storage = ZRS
+- Geo Redundant Storage = GRS
+- Geo Zone Redundant Storage =GZRS
+
+## 14.	Virtual Network for Immerse PROD Environment
+
+•	Requirement:
+
+Virtual Network Name: nebula-prod-vnet
+Project: Nebula (associated with resource group)
+Total No. of servers in VNET: 25
+Subnets: DB Servers, Web Servers, App Servers
+Location: Australia East
+
+Address space in VNET e.g. 10.0.0.0/22 (1024 IP Addresses) (22 indicates CIDR space)
+(10.1.0.0 – 10.1.3.255)
+Subnets -> Manage in logical groups. Distribution of address space into multiple groups
+Subnet1: 10.1.0.0/24 (around 250 address range)
+Subnet2: 10.1.1.0/24
+Each subnet will have associated IP address range.
+Multiple VNET and VNET Peering. Hybrid Network (Cloud VNET to On-Premises Network).
+
+- Hands On:
+- 
+Virtual networks: -> + Create
+RG-> IP Address: 10.0.0.0/22 -> 
++ Add Subnet 10.0.0.0/26 (app-server) (59 + 5 Azure reserved addresses)
++ Add Subnet 10.0.1.0/26 (db-server)
++ Add Subnet 10.0.2.0/26 (web-server)
+Add tags and Review and create.
+
+
