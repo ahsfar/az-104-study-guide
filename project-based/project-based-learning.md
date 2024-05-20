@@ -215,25 +215,25 @@ Add tags and Review and create.
 
 ## 14.	Deploy a VM to the VNET
 
-•	Requirement:
+### Requirement:
 
-### VM for DB server -> add to VNET (nebula-prod-vnet)
-VM name: nebula-prod-sql
-Project: Nebula
-OS Version: Windows Server 2019
-VNET: nebula-prod-vnet
-Subnet: db-servers
-OS Disk: HDD (125 GB)
-Data Disk: HDD (256 GB)
+#### VM for DB server -> add to VNET (nebula-prod-vnet)
+- VM name: nebula-prod-sql
+- Project: Nebula
+- OS Version: Windows Server 2019
+- VNET: nebula-prod-vnet
+- Subnet: db-servers
+- OS Disk: HDD (125 GB)
+- Data Disk: HDD (256 GB)
 
-### VM for web server -> add to VNET (nebula-prod-vnet)
-VM name: nebula-prod-sql
-Project: Nebula
-OS Version: Windows Server 2019
-VNET: nebula-prod-vnet
-Subnet: web-servers
-OS Disk: HDD (125 GB)
-Data Disk: HDD (256 GB)
+#### VM for web server -> add to VNET (nebula-prod-vnet)
+- VM name: nebula-prod-sql
+- Project: Nebula
+- OS Version: Windows Server 2019
+- VNET: nebula-prod-vnet
+- Subnet: web-servers
+- OS Disk: HDD (125 GB)
+- Data Disk: HDD (256 GB)
 
-- Hands On:
+### Hands On:
 Virtual Machines: -> + Create -> + Create VM -> Give All Info (Basics, Disks, Networking, Management, Advanced, Tags, Review + Create)
