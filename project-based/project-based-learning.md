@@ -262,6 +262,6 @@ Virtual Machines: -> + Create -> + Create VM -> Give All Info (Basics, Disks, Ne
 
 ### Hands On:
 Virtual Machines: -> + Create -> + Create VM -> Give All Info (Basics, Disks, Networking, Management, Advanced, Tags, Review + Create)
-![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/69318a67-2e0b-403a-bc40-dc6eff66b0d6)
+
 
 
