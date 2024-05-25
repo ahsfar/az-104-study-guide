@@ -263,5 +263,10 @@ Virtual Machines: -> + Create -> + Create VM -> Give All Info (Basics, Disks, Ne
 ### Hands On:
 Virtual Machines: -> + Create -> + Create VM -> Give All Info (Basics, Disks, Networking, Management, Advanced, Tags, Review + Create)
 
+## 16. Network Interface (NIC)
 
+VNIC (Can create, delete, move, disassociate and attach new interface – stop VM and do it) can have public or private IP to connect to network.
 
+[Virtual networks and virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-network/network-overview)
+
+## 17. 
