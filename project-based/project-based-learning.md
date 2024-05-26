@@ -19,7 +19,8 @@ Assign owner role for the AAD Tenant
 
 ## 4.	Map immerse.com -> immerse.onmicrosoft.com
 
-- Hands On:
+### Hands On:
+
 AAD -> Custom Domain names:
 + add custom domain: immerse.com (click add domain)
 Record type: TXT / MX (Research more about it)
@@ -48,7 +49,8 @@ For email most popular approach is office 365 (firstname.lastname@immerse.com)
 
 •	Single vs Bult Operation
 
-- Hands On:
+### Hands On:
+
 How to create or delete users in Microsoft Entra ID - Microsoft Entra | Microsoft Learn
 Immerse ADD -> Users -> Bulk Operation -> Create Bulk users:
 Download excel file, fill excel in the given format and upload the file. 
@@ -93,7 +95,7 @@ Standard and enforce compliant.
 Common usages: resource governance, regulatory compliance, security & cost mgmt.
 Azure policies can be used to ask user to always tag resources.
 
-- Hands On:
+### Hands On:
 
 Policy -> Definitions (Under Authoring) + Policy definition (+ Initiative definition is group of policies)
 Created on Date tag policy
@@ -141,7 +143,8 @@ High-level architecture and data flow of the proposed solution to support increm
 
 
 •	Requirement 2:
-- Hands On:
+
+### Hands On:
 
 Container/folder under nebula storage account.
 Go to nebula storage account -> click container (under data storage):
@@ -155,7 +158,9 @@ Go to nebula storage account -> click container (under data storage):
 1st – 30th April
 IP: 201.34.43.12
 2 ways: RBAC (internal or guest user) & Shared Access Signature (if not part of org)
-- Hands On:
+
+### Hands On:
+
 Nebula storage account: click shared access signature (under security + networking)
 Fill up the info and get the connection string to share.
 
@@ -165,15 +170,17 @@ Fill up the info and get the connection string to share.
 User1: Access to read file shares over SMB
 User2: Access to read, write, delete and modify NTFS permissions in Azure Storage File Shares over SMB
 
-- Hands On:
+### Hands On:
+
 2nd way using rbac-> go to nebula storage account: -> IAM -> add role assignment -> Storage file data smb share reader ->next  (+ select member ) -> review and assign.
 
 ## 12.	Implement Storage Account Life Cycle mgmt
 
-•	Requirement: Optimize storage cost
+### Requirement: Optimize storage cost
 Auto change access tier of files in data folder in nebula storage account to Archive if not modified last 75 days.
 
-- Hands On:
+### Hands On:
+
 Nebula storage account: -> lifecycle mgmt (under data mgmt)-> + add a rule:
 Enter info, add conditions, choose folder. And hit add the policy.
 
@@ -188,7 +195,7 @@ Enter info, add conditions, choose folder. And hit add the policy.
 
 ## 14.	Virtual Network for Immerse PROD Environment
 
-•	Requirement:
+### Requirement:
 
 Virtual Network Name: nebula-prod-vnet
 Project: Nebula (associated with resource group)
@@ -204,8 +211,8 @@ Subnet2: 10.1.1.0/24
 Each subnet will have associated IP address range.
 Multiple VNET and VNET Peering. Hybrid Network (Cloud VNET to On-Premises Network).
 
-- Hands On:
-- 
+### Hands On:
+
 Virtual networks: -> + Create
 RG-> IP Address: 10.0.0.0/22 -> 
 + Add Subnet 10.0.0.0/26 (app-server) (59 + 5 Azure reserved addresses)
