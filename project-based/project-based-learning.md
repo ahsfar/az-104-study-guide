@@ -269,4 +269,14 @@ VNIC (Can create, delete, move, disassociate and attach new interface – stop V
 
 [Virtual networks and virtual machines in Azure](https://learn.microsoft.com/en-us/azure/virtual-network/network-overview)
 
-## 17. 
+## 17.	Network Security Group Rules for Immerse Inc
+
+### NSG Requirements:
+
+No outbound
+RDP from 192.34.32.1 (Jump Host)
+NSG attached to VNI. Rules have priority (lowest no. highest priority). Deny/allow rules.
+
+### Hands On:
+Network Security Group: -> nebula-prod-sql-nsg -> Inbound security rules -> + Add -> Add the info.
+
