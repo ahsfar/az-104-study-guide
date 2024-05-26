@@ -40,6 +40,7 @@ Submit above values as they appear on Azure ADD -> Custom Domain -> Immerse.com
 After added and verified. Can make it primary.
 
 ## 5.	Invite existing users (by email address) – practical approach.
+
 For email most popular approach is office 365 (firstname.lastname@immerse.com)
 (GoDaddy also offers email accounts for domain)
 
@@ -111,7 +112,7 @@ Policy e.g.
 
 ## 9. Storage account provisioning
 
-•	Requirement #1
+### Requirement 1:
 Store backup data rarely accessed for compliance purpose.
 Project Name: Nebula
 Storage Account: Nebulastorage3672
@@ -142,8 +143,8 @@ High-level architecture and data flow of the proposed solution to support increm
 ![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/ff6f034f-176a-45ed-b8f8-57f653e78a86)
 
 
-•	Requirement 2:
-
+### Requirement 2:
+ 
 ### Hands On:
 
 Container/folder under nebula storage account.
@@ -154,7 +155,7 @@ Go to nebula storage account -> click container (under data storage):
 
 [Storage account overview](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 
-•	Requirement:
+### Requirement:
 1st – 30th April
 IP: 201.34.43.12
 2 ways: RBAC (internal or guest user) & Shared Access Signature (if not part of org)
@@ -166,7 +167,7 @@ Fill up the info and get the connection string to share.
 
 ## 11.	File Sharing permission using RBAC
 
-•	Requirement:
+### Requirement:
 User1: Access to read file shares over SMB
 User2: Access to read, write, delete and modify NTFS permissions in Azure Storage File Shares over SMB
 
