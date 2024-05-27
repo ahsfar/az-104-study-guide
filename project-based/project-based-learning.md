@@ -288,3 +288,13 @@ NSG attached to VNI. Rules have priority (lowest no. highest priority). Deny/all
 ### Hands On:
 Network Security Group: -> nebula-prod-sql-nsg -> Inbound security rules -> + Add -> Add the info.
 
+## 18.	VNET Peering
+
+### Requirement:
+
+What is Azure Virtual Network? | Microsoft Learn
+Nebula-prod-vnet < - > green-field-vnet
+
+### Hands On:
+Virtual Network (green-field-vnet): -> Peerings (under setting) -> + Add (enter info and add)
+
