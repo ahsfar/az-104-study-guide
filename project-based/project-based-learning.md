@@ -298,3 +298,15 @@ Nebula-prod-vnet < - > green-field-vnet
 ### Hands On:
 Virtual Network (green-field-vnet): -> Peerings (under setting) -> + Add (enter info and add)
 
+
+## 19.	Implement RDP using Bastion
+
+Public IP Add on VM for RDP from Internet
+Risks: Port Scanning, DDOS Attack, etc…
+
+Solution: Azure Bastion Service -> allow connecting without exposing public IP
+
+### Hands On:
+Virtual Machine (select VM): -> connect (Bastion) -> create subnet and Bastion service (Now you should be able to connect)
+
+
