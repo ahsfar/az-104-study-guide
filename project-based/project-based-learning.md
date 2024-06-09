@@ -309,4 +309,25 @@ Solution: Azure Bastion Service -> allow connecting without exposing public IP
 ### Hands On:
 Virtual Machine (select VM): -> connect (Bastion) -> create subnet and Bastion service (Now you should be able to connect)
 
+## 20.	Implement Load Balancer
+
+[Load Balancer | Microsoft Learn](https://learn.microsoft.com/en-us/azure/load-balancer/)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/01521c9c-8d46-41e5-88d4-572de14a4107)
+
+[What is Azure Load Balancer? - Azure Load Balancer | Microsoft Learn](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview)
+
+### Hands On:
+Create 2 VM: rg -> Nebula -> names: nebula-webserver-prod-1 & nebula-webserver-prod-2
+availability set: create new availability set (give name)
+webserver subnet
+add inbound rule to allow HTTP (80, tcp, any, any,allow)
+
+Go to Windows Server: open server manager-> Add roles and features -> role -> server role (select web server IIS) – hit add features -> role services (select relevant like logging etc.) -> confirm.
+
+Go to Azure Portal: load balancer -> create load balancer -> give info, basic, type: public -> Frontend IP Config -> + add -> give names and add. -> backend pools -> + add pool: give name, VNET, VM , ipv4, + add VMs -> review and create.
+
+Load Balancer: health probes (under settings) -> + Add : name, http, 80, /Deafult.html,5,2 (interval time)
+
+Load Balancer: load balancing rules (under settings) -> + Add : enter info and create.
 
