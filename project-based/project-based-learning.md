@@ -331,3 +331,32 @@ Load Balancer: health probes (under settings) -> + Add : name, http, 80, /Deaful
 
 Load Balancer: load balancing rules (under settings) -> + Add : enter info and create.
 
+## 21. Implement Azure Application Gateway
+
+### Requirement:
+Each webserver to handle a specific functional domain:
+All marketing domain-related web requests (based on URL) -> nebula-webserver-prod-1
+All sales domain-related web requests -> nebula-webserver-prod-2
+
+### Solution: 
+(Standard load balancer can’t meet these requirements so use azure application gateway.)
+
+Application Gateway: web traffic load balancer. (L7 LB & WAF – protection against DDOS)
+Load balancer (layer 4) vs application gateway (later 7)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/493950e9-64ac-4fda-bb5b-5852c7ede2dc)
+
+[What is Azure Application Gateway | Microsoft Learn](https://learn.microsoft.com/en-us/azure/application-gateway/overview)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/4d3c8ab8-b6b2-4e08-b62e-4ec67d1f7622)
+
+[What is Azure Application Gateway v2? | Microsoft Learn](https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2)
+
+### Hands On:
+[Quickstart: Direct web traffic using the portal - Azure Application Gateway | Microsoft Learn](https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-portal)
+
+Nebula-VNET -> + Add subnet -> name: app-gateway-subnet -> 10.0.3.0/29 (10.0.3.0-10.0.3.7 – 3 + 5 Azure reserved addresses)
+
+Load balancing: -> Application Gateway -> + create -> Give Info -> create public IP -> add backend pool: marketing-pool (select VM) & sales-pool (select VM) -> config: frontend (public IP) – routing rules (+ add rule-> listener -> backend targets: add http setting -> add a path) – backend pools -> tags -> review and create.
+
+*Standard LB need VMs in availability set but application gateway we can choose any VM.
