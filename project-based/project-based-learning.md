@@ -363,3 +363,40 @@ Nebula-VNET -> + Add subnet -> name: app-gateway-subnet -> 10.0.3.0/29 (10.0.3.0
 Load balancing: -> Application Gateway -> + create -> Give Info -> create public IP -> add backend pool: marketing-pool (select VM) & sales-pool (select VM) -> config: frontend (public IP) – routing rules (+ add rule-> listener -> backend targets: add http setting -> add a path) – backend pools -> tags -> review and create.
 
 *Standard LB need VMs in availability set but application gateway we can choose any VM.
+
+## 22. Point to Site VPN – Create VPN for Immerse to facilitate WFH for employees
+
+### Requirement:
+Vnet: nebula-prod-vnet
+Connect to network from home.
+
+### Solution:  
+Point to Site VPN
+Other solution: Jump host but it’s good for logs not ideal for developers.
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/0712dfcd-44eb-468d-861c-445fb3f38763)
+[Implement an open-source jump server solution on Azure - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/apache-guacamole)
+
+VPN connection:
+Point to Site connection: Individual client PC to Azure Virtual Network
+Site to Site connection: On Premise Network to Azure Virtual Network
+
+### Hands On:
+Virtual Network: -> nebula-prod-vnet -> + Gateway subnet -> provide info and create.
+Virtual Network Gateway: -> + Create (Give info) -> tags -> review & create. (nebula-vnet-gateway)
+(Create Group in Azure AD for VPN users.)
+AAD: -> groups -> + New Group: type: security, name: vpn users, select owner.
+Create an Azure AD tenant for P2S OpenVPN protocol connections: open public link and accept.
+
+[Configure a P2S VPN gateway and Microsoft Entra tenant: Microsoft Entra authentication: OpenVPN - Azure VPN Gateway | Microsoft Learn](https://learn.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-tenant)
+
+Admin consent for bringing Azure VPN into your organization. (Enterprise application -> Azure VPN)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/49536b44-3d1e-499d-8c30-86635ee1c299)
+
+Virtual Network Gateway: -> nebula-vnet-gateway-> Point-to-site configuration (under settings)-> configure now: 172.0.00/23, OpenVPN (SSL), type: Azure-Active Directory, tenant, audience, issuer. -> save
+Download VPN client.
+Install Azure VPN from store in your PC/laptop add the file downloaded above.
+Connect and sign in with your AAD account.
+Open cmd and type ipconfig to check the IP addresses.
+Get the private IP of any webserver and you can RDP to it.
+
