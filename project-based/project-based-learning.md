@@ -400,3 +400,35 @@ Connect and sign in with your AAD account.
 Open cmd and type ipconfig to check the IP addresses.
 Get the private IP of any webserver and you can RDP to it.
 
+## 23. Protect Immerse Network by Azure Firewall
+
+From Malware, Phishing or such attacks
+   
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/8dbab640-39a0-4606-bbcd-3dc77ff61d69)
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/cd244c9c-ab94-4b6d-8857-db0a62782d51)
+
+[What is Azure Firewall? | Microsoft Learn](https://learn.microsoft.com/en-us/azure/firewall/overview)
+[Azure Firewall Premium features | Microsoft Learn](https://learn.microsoft.com/en-us/azure/firewall/premium-features)
+
+### Hands On:
+AzureFirewallSubnet
+Create Azure Firewall Instance
+Create route table -> Config user defined route
+Associate the subnet’s the route
+Config firewall rule
+
+[Tutorial: Deploy & configure Azure Firewall and policy using the Azure portal | Microsoft Learn](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal-policy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
