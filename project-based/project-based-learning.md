@@ -419,16 +419,60 @@ Config firewall rule
 
 [Tutorial: Deploy & configure Azure Firewall and policy using the Azure portal | Microsoft Learn](https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal-policy)
 
+## 24.	Implement Network Monitoring & Network Topology
 
+### Requirement:
+Collection of network diagnostic tools to monitor, diagnose, repair, view metrics for VNet, VM, Application Gateway & load balancers.
 
+### Solution:  
+Azure Network Watcher service 
 
+### Hands On:
+[Azure Network Watcher overview | Microsoft Learn](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview)
 
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/ca3ceece-e09c-4892-8c21-bd6d4d6a0fa7)
 
+Network Watcher: 
+Monitor: -> Topology (Graphical infrastructure representation)
+Network diagnostic tools:
+Metrics:
+Logs:
 
+## 25.	Implement Network Connection Troubleshooting using Network Watcher
 
+### Requirement:
+Troubleshoot connectivity issue between VMs
 
+### Solution:  
+Connection troubleshoot in Network Watcher under Network diagnostic tools
 
+### Hands On:
+Go to connection troubleshoot input info for Source: like subscription, RG, Source type (VM), VM (name) and for Destination.
+and hit check.
 
+## 26.	Implement IP Flow Verify
 
+### Requirement:
+Check if packed is allowed or denied based on security group.
+
+### Solution:  
+IP Flow verify in Network Watcher under Network diagnostic tools
+
+### Hands On:
+Network Watcher: IP flow verify -> give all info of the VM, protocol and ports with ip addresses.
+(hit check and it’ll give you reasons if denied or allowed)
+
+## 27.	Implement Storage Account Network Access
+
+### Requirement:
+Storage account “nebulastorage36722” only accessible from corporate or internal network “nebula-prod-vnet” (Practical requirement in industry)
+
+### Solution:  
+storage account networking setting
+[Configure Azure Storage firewalls and virtual networks | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal)
+
+### Hands On:
+Storage account: Networking -> Firewalls and virtual networks -> Allow access from: selected networks -> + add existing virtual network (add nebula-prod-vnet)
+(Private endpoint connections: provide private IP to be connected to within your virtual network)
 
 
