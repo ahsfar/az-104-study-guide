@@ -488,8 +488,8 @@ App Service
 ![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/bfda1d9a-69d1-4ee8-91ae-c45b3176f220)
 
 App Service Plan:
-•	Tier/Feature Set
-•	Determines the feature set / compute resources.
+-	Tier/Feature Set
+-	Determines the feature set / compute resources.
 
 [App Service plans - Azure App Service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
 
@@ -510,28 +510,28 @@ Azure Backup
 [What is Azure Backup? - Azure Backup | Microsoft Learn](https://learn.microsoft.com/en-us/azure/backup/backup-overview)
 
 ### Data/Services can be backed up:
-•	VM (Linux/windows) point in time, 
-•	hyper-V & VMWare workloads in on Premise, 
-•	Azure file shares, 
-•	SQL servers hosted on Azure
+-	VM (Linux/windows) point in time, 
+-	hyper-V & VMWare workloads in on Premise, 
+-	Azure file shares, 
+-	SQL servers hosted on Azure
 
 ### Advantages:
-•	No manual custom backup solution
-•	Readily available service
-•	Data backup is secured
-•	Scalable
-•	Customizable data retention period
+-	No manual custom backup solution
+-	Readily available service
+-	Data backup is secured
+-	Scalable
+-	Customizable data retention period
 
 ### Azure Recovery Service Vault:
-•	Storage service for backup data
-•	Highly secured with encryption and RBAC
-•	Soft Delete
-•	Cross Region Restore (can be restored across region)
+-	Storage service for backup data
+-	Highly secured with encryption and RBAC
+-	Soft Delete
+-	Cross Region Restore (can be restored across region)
 
 ### Snapshot:
-•	Application consistent: memory & pending I/O also included in VM snapshot.
-•	File System consistent: All the files at the time of backup.
-•	Crash consistent: Data on the disk at the time of backup is captured.
+-	Application consistent: memory & pending I/O also included in VM snapshot.
+-	File System consistent: All the files at the time of backup.
+-	Crash consistent: Data on the disk at the time of backup is captured.
 
 ### Hands On:
 VM (nebula-prod-webserver-1): backup (under Operations)-> create new vault, choose backup policy (in the policy you can mention daily backups etc, and retention period of the backup) and create.
@@ -546,8 +546,8 @@ Restore file from the last backup of “nebula-prod-webserver-1”
 Backup in VM under operations
 
 ### Restoring Options:
-•	File Recovery
-•	VM Recovery
+- File Recovery
+- VM Recovery
 
 ### Hands On:
 VM (nebula-prod-webserver-1): backup (under Operations)-> File recovery -> choose the snapshot from the restore point, download executable, run as administrator, enter given password, it will mount the drive, and then you can see all drive mounted with all the files from there you can restore.
