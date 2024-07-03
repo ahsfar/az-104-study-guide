@@ -475,4 +475,81 @@ storage account networking setting
 Storage account: Networking -> Firewalls and virtual networks -> Allow access from: selected networks -> + add existing virtual network (add nebula-prod-vnet)
 (Private endpoint connections: provide private IP to be connected to within your virtual network)
 
+## 28. Implement App Service
 
+### Requirement:
+Provision an App Service for hosting an internal web application named nebula-marketing. It should support auto scaling & staging slots.
+
+### Solution:  
+App Service
+
+[Overview - Azure App Service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/app-service/overview)
+
+![image](https://github.com/ahsfar/az-104-study-guide/assets/91184500/bfda1d9a-69d1-4ee8-91ae-c45b3176f220)
+
+App Service Plan:
+•	Tier/Feature Set
+•	Determines the feature set / compute resources.
+
+[App Service plans - Azure App Service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
+
+### Hands On:
+
+App Service: + Create: (Create Web App)-> Basics (Enter the Project & instance details, app service plan: S1), Deployment, Monitoring, Tags, Review + Create (Hit review and create.)
+
+[Quickstart: Deploy an ASP.NET web app - Azure App Service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net70&pivots=development-environment-vs)
+
+
+## 29.	Implement Backup Solution & Recovery Service Vault
+
+### Requirement:
+Periodically backup “nebula-prod-webserver-1” into Azure Recovery Service Vault
+
+### Solution:  
+Azure Backup 
+[What is Azure Backup? - Azure Backup | Microsoft Learn](https://learn.microsoft.com/en-us/azure/backup/backup-overview)
+
+### Data/Services can be backed up:
+•	VM (Linux/windows) point in time, 
+•	hyper-V & VMWare workloads in on Premise, 
+•	Azure file shares, 
+•	SQL servers hosted on Azure
+
+### Advantages:
+•	No manual custom backup solution
+•	Readily available service
+•	Data backup is secured
+•	Scalable
+•	Customizable data retention period
+
+### Azure Recovery Service Vault:
+•	Storage service for backup data
+•	Highly secured with encryption and RBAC
+•	Soft Delete
+•	Cross Region Restore (can be restored across region)
+
+### Snapshot:
+•	Application consistent: memory & pending I/O also included in VM snapshot.
+•	File System consistent: All the files at the time of backup.
+•	Crash consistent: Data on the disk at the time of backup is captured.
+
+### Hands On:
+VM (nebula-prod-webserver-1): backup (under Operations)-> create new vault, choose backup policy (in the policy you can mention daily backups etc, and retention period of the backup) and create.
+[Quickstart - Back up a VM with the Azure portal by using Azure Backup - Azure Backup | Microsoft Learn](https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-portal)
+
+## 30.	Restoring files from backup
+
+### Requirement:
+Restore file from the last backup of “nebula-prod-webserver-1”
+
+### Solution:  
+Backup in VM under operations
+
+### Restoring Options:
+•	File Recovery
+•	VM Recovery
+
+### Hands On:
+VM (nebula-prod-webserver-1): backup (under Operations)-> File recovery -> choose the snapshot from the restore point, download executable, run as administrator, enter given password, it will mount the drive, and then you can see all drive mounted with all the files from there you can restore.
+
+[Recover files and folders from Azure VM backup - Azure Backup | Microsoft Learn](https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm)
